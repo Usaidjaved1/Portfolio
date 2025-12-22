@@ -35,20 +35,16 @@ const AboutSection = () => {
             {/* Left Side - Text Content */}
             <div className="space-y-6">
               <div className="space-y-4">
-                <p className="text-lg text-muted-foreground leading-relaxed">
-                  I'm a passionate <span className="text-primary font-medium">Full Stack JavaScript Developer</span> with 
-                  a love for creating elegant solutions to complex problems. With expertise in modern 
-                  web technologies, I specialize in building responsive and performant applications.
-                </p>
-                <p className="text-lg text-muted-foreground leading-relaxed">
-                  My journey in web development started with curiosity about how websites work, 
-                  and has evolved into a deep passion for crafting user-centric digital experiences. 
-                  I believe in continuous learning and staying updated with the latest industry trends.
-                </p>
-                <p className="text-lg text-muted-foreground leading-relaxed">
-                  When I'm not coding, you'll find me exploring new technologies, contributing to 
-                  open-source projects, or sharing knowledge with the developer community.
-                </p>
+               <p className="text-lg text-muted-foreground leading-relaxed">
+  I'm a passionate <span className="text-primary font-medium">Front-End Developer</span> with a love for crafting interactive, responsive, and visually appealing web experiences. I specialize in modern JavaScript frameworks like React and Vue, and design clean, user-centric interfaces.
+</p>
+<p className="text-lg text-muted-foreground leading-relaxed">
+  My journey in front-end development began with curiosity about how websites are built, and has grown into a passion for turning designs into performant, elegant applications. I constantly explore the latest web technologies and best practices to enhance user experiences.
+</p>
+<p className="text-lg text-muted-foreground leading-relaxed">
+  When I'm not coding, you'll find me experimenting with new UI/UX ideas, contributing to open-source front-end projects, or learning about emerging technologies in the web ecosystem.
+</p>
+
               </div>
 
               {/* Quick Stats */}
