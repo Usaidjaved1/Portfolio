@@ -56,7 +56,7 @@ const HeroSection = () => {
 
             <div className="flex items-center justify-center lg:justify-start gap-4 animate-fade-up">
               <a
-                href="https://github.com/Usaidjaved1n"
+                href="https://github.com/Usaidjaved1"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="p-3 rounded-full bg-secondary hover:bg-primary hover:text-primary-foreground transition-all duration-300 hover:scale-110"

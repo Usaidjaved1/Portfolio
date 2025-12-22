@@ -10,7 +10,7 @@ const contactInfo = [
 ];
 
 const socialLinks = [
-  { icon: Github, label: 'GitHub', href: 'https://github.com/Usaidjaved1n' },
+  { icon: Github, label: 'GitHub', href: 'https://github.com/Usaidjaved1' },
   { icon: Linkedin, label: 'LinkedIn', href: 'https://www.linkedin.com/in/usaid-javed-5b3aa9341/' },
   { icon: Twitter, label: 'Twitter', href: 'https://x.com/USAIDJAVED12353' },
 ];
