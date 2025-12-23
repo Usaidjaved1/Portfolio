@@ -1,17 +1,20 @@
+import { Database } from "lucide-react";
+
 const skills = [
   { name: 'JavaScript', level: 95, category: 'Frontend' },
   { name: 'TypeScript', level: 90, category: 'Frontend' },
   { name: 'React', level: 92, category: 'Frontend' },
-  { name: 'Vue.js', level: 80, category: 'Frontend' },
   { name: 'HTML/CSS', level: 95, category: 'Frontend' },
   { name: 'Tailwind CSS', level: 88, category: 'Frontend' },
   { name: 'Git', level: 90, category: 'Tools' },
-  { name: 'Docker', level: 75, category: 'Tools' },
+  { name: 'Firebase', level: 75, category: 'Tools' },
+   { name: 'Supabase', level: 65, category: 'Tools' },
 ];
 
 const SkillsSection = () => {
   const frontendSkills = skills.filter(s => s.category === 'Frontend');
   const toolsSkills = skills.filter(s => s.category === 'Tools');
+    const database = skills.filter(s => s.category === 'Database');
 
   const SkillBar = ({ name, level }: { name: string; level: number }) => (
     <div className="group">
@@ -61,6 +64,7 @@ const SkillsSection = () => {
           <div className="grid md:grid-cols-2 lg:grid-cols-2 gap-6">
             <SkillCategory title="Frontend" skills={frontendSkills} />
             <SkillCategory title="Tools & Others" skills={toolsSkills} />
+         
           </div>
 
           {/* Additional Skills Tags */}

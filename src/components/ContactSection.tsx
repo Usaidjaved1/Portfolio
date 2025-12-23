@@ -2,6 +2,8 @@ import { useState } from 'react';
 import { Mail, MapPin, Phone, Send, Github, Linkedin, Twitter } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { toast } from 'sonner';
+import { collection, addDoc, serverTimestamp } from "firebase/firestore";
+import { db } from "@/firebase"; // Make sure path is correct
 
 const contactInfo = [
   { icon: Mail, label: 'Email', value: 'uccucoral@gmail.com', href: 'mailto:uccucoral@gmail.com' },
@@ -30,15 +32,26 @@ const ContactSection = () => {
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setIsSubmitting(true);
-    
-    // Simulate form submission
-    await new Promise(resolve => setTimeout(resolve, 1000));
-    
-    toast.success('Message sent successfully!', {
-      description: "I'll get back to you as soon as possible.",
-    });
-    
-    setFormData({ name: '', email: '', message: '' });
+
+    try {
+      // Firestore me data add karna
+      await addDoc(collection(db, "contacts"), {
+        name: formData.name,
+        email: formData.email,
+        message: formData.message,
+        timestamp: serverTimestamp(),
+      });
+
+      toast.success('Message sent successfully!', {
+        description: "I'll get back to you as soon as possible.",
+      });
+
+      setFormData({ name: '', email: '', message: '' });
+    } catch (err) {
+      console.error("Error adding document: ", err);
+      toast.error("Failed to send message.");
+    }
+
     setIsSubmitting(false);
   };
 

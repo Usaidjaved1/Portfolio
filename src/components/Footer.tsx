@@ -16,7 +16,7 @@ const Footer = () => {
 
           {/* Copyright */}
           <p className="text-muted-foreground text-sm flex items-center gap-1">
-            © {currentYear} Made with <Heart className="w-4 h-4 text-destructive fill-current" /> using JavaScript
+            © {currentYear} Made with <Heart className="w-4 h-4 text-destructive fill-current" /> using React
           </p>
 
           {/* Quick Links */}

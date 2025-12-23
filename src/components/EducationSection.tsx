@@ -6,14 +6,14 @@ const education = [
     institution: 'Sir Adamjee Institute',
     year: '2024 - 2026',
     description: 'Focused on front-end development, UI/UX design, and responsive web applications.',
-    achievements: ["Dean's List", 'Top Projects in Web Dev'],
+    achievements: [ 'Top Projects in Web Dev'],
   },
   {
     degree: 'Front-End Web Development Bootcamp',
-    institution: 'Tech Academy',
+    institution: 'Saylani Mass IT Training',
     year: '2025',
     description: 'Intensive 6-month program covering HTML, CSS, JavaScript, React, and modern front-end practices.',
-    achievements: ['Top Graduate', 'Built 10+ Front-End Projects'],
+    achievements: ['Built 10+ Front-End Projects'],
   },
 ];
 
